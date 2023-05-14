@@ -1,3 +1,9 @@
-# Medial-IPC
- This is a simple version including dense sovler only.  
-Some libaries are required: **QT, Eigen, QGLViewer, CUDA, Inter mkl, Freetype**.
+
+libQGLViewer use freeglut, I modify some glut header
+
+Install [Xmake](https://xmake.io/#/guide/installation), try
+
+```sh
+scoop install cuda
+xmake -y
+```

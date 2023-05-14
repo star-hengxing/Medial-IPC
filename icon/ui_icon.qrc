@@ -1,7 +1,7 @@
 <RCC>
   <qresource>
-    <file>OpenFile.png</file>
-    <file>SaveFile.png</file>
+    <file>open_file.png</file>
+    <file>save_file.png</file>
     <file>reset_animation.png</file>
     <file>pause_animation.png</file>
     <file>play_animation.png</file>
