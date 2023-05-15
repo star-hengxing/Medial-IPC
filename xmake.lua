@@ -90,10 +90,18 @@ target("main")
     add_files("*.cpp")
     add_files("Cuda/*.cu")
     add_files("icon/ui_icon.qrc")
+    add_files("SimFramework.rc")
+
+    -- if is_mode("debug") then
+    --     add_ldflags("/subsystem:console")
+    -- end
+    add_ldflags("/subsystem:console")
 
     add_links("cublas", "cusolver", "cusparse")
 
     add_packages("cuda", "eigen", "mkl", "qucsdk", "freetype", "libqglviewer", "openmp")
+
+    set_rundir("$(projectdir)")
 
     on_load(function(target)
         import("detect.sdks.find_qt")
